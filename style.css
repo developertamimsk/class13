@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header-box {
+    width: 100%;
+    height: 650px;
+    background: url(img/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-box .header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+.header-box .header .logo{}
+.header-box .header .logo h1{
+color: #fff;
+font-family: monospace;
+font-size: 45px;
+}
+.header-box .header .menu ul{}
+.header-box .header .menu ul li{
+    display: inline-block;
+    margin: 5px 10px;
+}
+.header-box .header .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 5px 0;
+    transition: 300ms;
+}
+.header-box .header .menu ul li a:hover{
+    color: #4c00ff;
+    border-bottom: 2px solid #4c00ff;
+}
+.header-box .content h2{}
+.header-box .content h2::after {
+    content: '"';
+    color: #ef664d;
+}
+.header-box .content h2::before {
+    content: '"';
+    color: #ef664d;
+}
+
+
+.about {
+    padding: 40px 0;
+}
+
+.about .min-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.about .min-div .img-div img {
+    width: 250px;
+    margin-right: 220px;
+    position: relative;
+    top: 125px;
+    box-shadow: 1px -1px 5px 4px #ef664d;
+}
+
+.about .min-div .text-div h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+    left: -120px;
+}
+
+.about .min-div .text-div p {
+    width: 650px;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.SERVICE {
+    background: #2e3e4e;
+    height: 650px;
+}
+
+.SERVICE h3 {
+    color: #ef664d;
+    font-size: 40px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.SERVICE .service-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    color: #fff;
+}
+
+.SERVICE .service-box .lesty {
+    display: inline-block;
+    padding: 0 50px;
+
+}
+
+.SERVICE .service-box .lesty h1 {
+    background: #ef664d;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 0px 25px;
+    position: relative;
+    left: 47px;
+}
+
+.SERVICE .service-box .lesty h2 {
+    text-align: center;
+    padding: 20px 0;
+    font-style: italic;
+
+}
+
+.SERVICE .service-box .lesty ul {
+    list-style: none;
+}
+
+.SERVICE .service-box .lesty ul li::before {
+    content: '\f560';
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #ef664d;
+    position: relative;
+    left: -10px;
+}
+
+.SERVICE .service-box .lesty ul li {
+    padding: 8px 0;
+}
+
+.SERVICE .service-box .lesty a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background: #ef664d;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 25px;
+    top: 20px;
+    z-index: 1;
+}
+
+.SERVICE .service-box .lesty .hover::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2d00f3;
+    border-radius: 10px;
+    transition: 300ms;
+    z-index: -1;
+}
+
+.SERVICE .service-box .lesty .hover:hover:before {
+    width: 100%;
+}
+
+.SERVICE .service-box .lesty .hover-two::before {
+    height: 0;
+    width: 100%;
+}
+
+.SERVICE .service-box .lesty .hover-two:hover::before {
+    height: 100%;
+}
+
+.SERVICE .service-box .lesty .hover-three::before {
+    height: 100%;
+    width: 0%;
+    left: 0;
+}
+
+.SERVICE .service-box .lesty .hover-three:hover::before {
+    width: 100%;
+}
+
+.contact {}
+
+.contact h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-box {
+    text-align: center;
+
+}
+
+.contact .contact-box .Your {
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid #ef664d;
+    width: 600px;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.contact .button-box {
+    text-align: center;
+}
+
+.contact .button-box .button {
+    display: inline-block;
+    font-size: 40px;
+    text-decoration: none;
+    font-style: italic;
+    background: #ef664d;
+    color: #ffffff;
+    width: 400px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact .button-box .button::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2d00f3;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 600ms;
+}
+
+.contact .button-box .button:hover::before {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #19212a;
+    margin-top: 20px;
+}
+
+.footer h1 {
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
